@@ -81,6 +81,7 @@
                 <resource>
                   <directory>ear/META-INF</directory>
                   <includes>
+                    <include>application.xml</include>
                     <include>weblogic-application.xml</include>
                     <include>weblogic-diagnostics.xml</include>
                   </includes>
@@ -95,7 +96,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-ear-plugin</artifactId>
         <configuration>
-          <generateApplicationXml>true</generateApplicationXml>
+          <generateApplicationXml>false</generateApplicationXml>
           <modules>
             <ejbModule>
               <groupId>com.oracle.weblogic.sample.medrec-javaee</groupId>
